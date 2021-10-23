@@ -11,7 +11,7 @@ var https = require('https');
 var http = require('http');
 var server;
 if (process.env.LOCAL) {
-  server = https.createServer(options, app);
+ server = http.createServer(app);
 } else {
   server = http.createServer(app);
 }
